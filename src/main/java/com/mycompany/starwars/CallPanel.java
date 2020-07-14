@@ -1,29 +1,39 @@
 
 package com.mycompany.starwars;
 
+import java.awt.HeadlessException;
 import javax.swing.JFrame;
 
 
 public class CallPanel extends JFrame{
     
     public CallPanel(){
-        this.setSize(600,600);
+        
+        
         
     }
-    
-    public static void main(String[] args) {
+
+    public CallPanel(String title) throws HeadlessException {
+        super(title);
+        
+        setSize(900, 900);
+        setResizable(false);  
+        setFocusable(false);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         
         PlayGround pg = new PlayGround();
         
-        CallPanel cp = new CallPanel();
+        pg.requestFocus();
+        pg.addKeyListener(pg);
+        pg.setFocusable(true);
+        pg.setFocusTraversalKeysEnabled(false);       
         
-        cp.setVisible(true);
-        cp.setSize(800, 800);
-        cp.setResizable(true);        
-        cp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        cp.add(pg);
-         
+        add(pg);
         
+        setVisible(true);
     }
     
+    
+    
+   
 }

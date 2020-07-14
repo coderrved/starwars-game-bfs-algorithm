@@ -46,7 +46,7 @@ public class ChooseScreen extends javax.swing.JFrame {
         stormCheck = new javax.swing.JCheckBox();
         kyloRenImage = new javax.swing.JLabel();
         startGameButton = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -61,7 +61,7 @@ public class ChooseScreen extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 102, 102));
         jLabel1.setText("Choose Bad Chacaracter");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(100, 200, 210, 30);
+        jLabel1.setBounds(100, 190, 210, 30);
         getContentPane().add(masterYodaCheck);
         masterYodaCheck.setBounds(80, 160, 28, 23);
 
@@ -148,9 +148,9 @@ public class ChooseScreen extends javax.swing.JFrame {
         getContentPane().add(startGameButton);
         startGameButton.setBounds(130, 380, 124, 40);
 
-        jLabel14.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/uzay-karanlik.jpg")); // NOI18N
-        getContentPane().add(jLabel14);
-        jLabel14.setBounds(-7, 0, 410, 440);
+        jLabel4.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/Earth-from-space-1-64e9a7c.jpg")); // NOI18N
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(-5, 0, 420, 440);
 
         pack();
         setLocationRelativeTo(null);
@@ -166,8 +166,12 @@ public class ChooseScreen extends javax.swing.JFrame {
 
     private void startGameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGameButtonActionPerformed
         
-        CallPanel cp = new CallPanel();
-        cp.setVisible(true);
+        
+        CallPanel cp = new CallPanel("Game Screen");
+        this.setVisible(false);
+        
+        
+        
     }//GEN-LAST:event_startGameButtonActionPerformed
 
     /**
@@ -212,8 +216,8 @@ public class ChooseScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;

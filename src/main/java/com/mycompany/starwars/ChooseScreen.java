@@ -28,93 +28,99 @@ public class ChooseScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        masterYodaImage = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         masterYodaCheck = new javax.swing.JCheckBox();
         jLabel3 = new javax.swing.JLabel();
-        lukeSkywalkerImage = new javax.swing.JLabel();
+        masterYodaImage = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         lukeSkyCheck = new javax.swing.JCheckBox();
         jLabel6 = new javax.swing.JLabel();
-        darthVaderImage = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         darthVaderCheck = new javax.swing.JCheckBox();
-        StormtooperImage = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         kyloCheck = new javax.swing.JCheckBox();
         stormCheck = new javax.swing.JCheckBox();
-        kyloRenImage = new javax.swing.JLabel();
         startGameButton = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        darthVaderImage = new javax.swing.JLabel();
+        lukeSkywalkerImage = new javax.swing.JLabel();
+        kyloRenImage = new javax.swing.JLabel();
+        StormtrooperImage = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        masterYodaImage.setBackground(new java.awt.Color(255, 51, 0));
-        masterYodaImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/MP-YodaSpecies.png")); // NOI18N
-        masterYodaImage.setText("jLabel2");
-        getContentPane().add(masterYodaImage);
-        masterYodaImage.setBounds(70, 50, 50, 90);
-
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 102, 102));
+        jLabel1.setForeground(new java.awt.Color(204, 0, 0));
         jLabel1.setText("Choose Bad Chacaracter");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(100, 190, 210, 30);
-        getContentPane().add(masterYodaCheck);
-        masterYodaCheck.setBounds(80, 160, 28, 23);
+        jLabel1.setBounds(230, 220, 210, 30);
 
-        jLabel3.setForeground(new java.awt.Color(255, 255, 0));
+        masterYodaCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                masterYodaCheckActionPerformed(evt);
+            }
+        });
+        getContentPane().add(masterYodaCheck);
+        masterYodaCheck.setBounds(110, 190, 28, 23);
+
+        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
         jLabel3.setText("Master Yoda");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(60, 140, 80, 16);
+        jLabel3.setBounds(90, 170, 80, 16);
 
-        lukeSkywalkerImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/b8f4d12d1f2eb290a269f8ae9d4a8a7d.jpg")); // NOI18N
-        lukeSkywalkerImage.setText("jLabel4");
-        getContentPane().add(lukeSkywalkerImage);
-        lukeSkywalkerImage.setBounds(260, 50, 50, 80);
+        masterYodaImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/masteryoda.jpg")); // NOI18N
+        masterYodaImage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                masterYodaImageMouseClicked(evt);
+            }
+        });
+        getContentPane().add(masterYodaImage);
+        masterYodaImage.setBounds(80, 50, 100, 110);
 
-        jLabel5.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 204));
         jLabel5.setText("Luke Skywalker");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(240, 140, 100, 16);
+        jLabel5.setBounds(490, 170, 100, 16);
+
+        lukeSkyCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lukeSkyCheckActionPerformed(evt);
+            }
+        });
         getContentPane().add(lukeSkyCheck);
-        lukeSkyCheck.setBounds(270, 160, 30, 23);
+        lukeSkyCheck.setBounds(520, 190, 30, 23);
 
         jLabel6.setBackground(new java.awt.Color(51, 51, 255));
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 153, 153));
+        jLabel6.setForeground(new java.awt.Color(204, 0, 0));
         jLabel6.setText("Choose Good Chacaracter");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(80, 10, 230, 20);
+        jLabel6.setBounds(230, 20, 230, 20);
 
-        darthVaderImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/GUEST_bd945555-f106-40e9-80ad-4c6668b4e534.jpeg")); // NOI18N
-        darthVaderImage.setText("jLabel7");
-        getContentPane().add(darthVaderImage);
-        darthVaderImage.setBounds(40, 230, 50, 90);
-
-        jLabel8.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel8.setForeground(new java.awt.Color(0, 0, 204));
         jLabel8.setText("Darth Vader");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(30, 310, 74, 16);
+        jLabel8.setBounds(50, 390, 74, 16);
+
+        darthVaderCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                darthVaderCheckActionPerformed(evt);
+            }
+        });
         getContentPane().add(darthVaderCheck);
-        darthVaderCheck.setBounds(50, 330, 30, 23);
+        darthVaderCheck.setBounds(70, 410, 30, 23);
 
-        StormtooperImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/p-082641-1.jpg")); // NOI18N
-        StormtooperImage.setText("jLabel9");
-        getContentPane().add(StormtooperImage);
-        StormtooperImage.setBounds(170, 246, 50, 60);
-
-        jLabel10.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel10.setForeground(new java.awt.Color(0, 0, 204));
         jLabel10.setText("Stormtrooper");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(153, 310, 90, 16);
+        jLabel10.setBounds(290, 390, 90, 16);
 
-        jLabel12.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel12.setForeground(new java.awt.Color(0, 0, 204));
         jLabel12.setText("Kylo Ren");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(300, 310, 60, 16);
+        jLabel12.setBounds(530, 390, 60, 16);
 
         kyloCheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +128,7 @@ public class ChooseScreen extends javax.swing.JFrame {
             }
         });
         getContentPane().add(kyloCheck);
-        kyloCheck.setBounds(310, 330, 28, 23);
+        kyloCheck.setBounds(540, 410, 28, 23);
 
         stormCheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,15 +136,10 @@ public class ChooseScreen extends javax.swing.JFrame {
             }
         });
         getContentPane().add(stormCheck);
-        stormCheck.setBounds(180, 330, 28, 23);
+        stormCheck.setBounds(320, 410, 28, 23);
 
-        kyloRenImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/Kylo_Ren-_Advanced_Graphics-_TROS.png")); // NOI18N
-        kyloRenImage.setText("jLabel13");
-        getContentPane().add(kyloRenImage);
-        kyloRenImage.setBounds(300, 250, 50, 60);
-
-        startGameButton.setBackground(new java.awt.Color(0, 0, 153));
-        startGameButton.setForeground(new java.awt.Color(0, 204, 204));
+        startGameButton.setBackground(new java.awt.Color(255, 255, 255));
+        startGameButton.setForeground(new java.awt.Color(0, 102, 0));
         startGameButton.setText("START GAME");
         startGameButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,11 +147,48 @@ public class ChooseScreen extends javax.swing.JFrame {
             }
         });
         getContentPane().add(startGameButton);
-        startGameButton.setBounds(130, 380, 124, 40);
+        startGameButton.setBounds(270, 450, 124, 40);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/Earth-from-space-1-64e9a7c.jpg")); // NOI18N
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(-5, 0, 420, 440);
+        darthVaderImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/darthvader.jpg")); // NOI18N
+        darthVaderImage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                darthVaderImageMouseClicked(evt);
+            }
+        });
+        getContentPane().add(darthVaderImage);
+        darthVaderImage.setBounds(40, 270, 100, 110);
+
+        lukeSkywalkerImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/Lukeskywalker.jpg")); // NOI18N
+        lukeSkywalkerImage.setSize(new java.awt.Dimension(110, 110));
+        lukeSkywalkerImage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lukeSkywalkerImageMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lukeSkywalkerImage);
+        lukeSkywalkerImage.setBounds(490, 50, 110, 110);
+
+        kyloRenImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/kyloren.png")); // NOI18N
+        kyloRenImage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                kyloRenImageMouseClicked(evt);
+            }
+        });
+        getContentPane().add(kyloRenImage);
+        kyloRenImage.setBounds(510, 270, 100, 110);
+
+        StormtrooperImage.setIcon(new javax.swing.ImageIcon("/Users/vedatbilaloglu/Downloads/stormtrooper.jpg")); // NOI18N
+        StormtrooperImage.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                StormtrooperImageMouseClicked(evt);
+            }
+        });
+        getContentPane().add(StormtrooperImage);
+        StormtrooperImage.setBounds(280, 270, 110, 110);
+
+        jLabel2.setText("Only One ");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(270, 50, 140, 16);
 
         pack();
         setLocationRelativeTo(null);
@@ -158,10 +196,16 @@ public class ChooseScreen extends javax.swing.JFrame {
 
     private void stormCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stormCheckActionPerformed
         // TODO add your handling code here:
+        if(stormCheck.isSelected()){
+            System.out.println("storm checked");
+        }
     }//GEN-LAST:event_stormCheckActionPerformed
 
     private void kyloCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kyloCheckActionPerformed
         // TODO add your handling code here:
+        if(kyloCheck.isSelected()){
+            System.out.println("kylo checked");
+        }
     }//GEN-LAST:event_kyloCheckActionPerformed
 
     private void startGameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGameButtonActionPerformed
@@ -171,8 +215,50 @@ public class ChooseScreen extends javax.swing.JFrame {
         this.setVisible(false);
         
         
-        
     }//GEN-LAST:event_startGameButtonActionPerformed
+
+    private void darthVaderCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_darthVaderCheckActionPerformed
+        // TODO add your handling code here:
+        if(darthVaderCheck.isSelected()){
+            System.out.println("darthVader checked");
+        }
+    }//GEN-LAST:event_darthVaderCheckActionPerformed
+
+    private void masterYodaCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_masterYodaCheckActionPerformed
+        // TODO add your handling code here:
+        if(masterYodaCheck.isSelected()){
+            System.out.println("masterYoda checked");
+            lukeSkyCheck.setSelected(false);
+        }
+    }//GEN-LAST:event_masterYodaCheckActionPerformed
+
+    private void lukeSkyCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lukeSkyCheckActionPerformed
+        // TODO add your handling code here:
+        if(lukeSkyCheck.isSelected()){
+            System.out.println("lukeSky checked");
+            masterYodaCheck.setSelected(false);
+        }
+    }//GEN-LAST:event_lukeSkyCheckActionPerformed
+
+    private void lukeSkywalkerImageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lukeSkywalkerImageMouseClicked
+        
+    }//GEN-LAST:event_lukeSkywalkerImageMouseClicked
+
+    private void masterYodaImageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_masterYodaImageMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_masterYodaImageMouseClicked
+
+    private void darthVaderImageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_darthVaderImageMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_darthVaderImageMouseClicked
+
+    private void StormtrooperImageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StormtrooperImageMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_StormtrooperImageMouseClicked
+
+    private void kyloRenImageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kyloRenImageMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kyloRenImageMouseClicked
 
     /**
      * @param args the command line arguments
@@ -210,14 +296,14 @@ public class ChooseScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel StormtooperImage;
+    private javax.swing.JLabel StormtrooperImage;
     private javax.swing.JCheckBox darthVaderCheck;
     private javax.swing.JLabel darthVaderImage;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
